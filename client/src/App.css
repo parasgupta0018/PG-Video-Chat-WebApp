@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #262A42;
+  color: white;
+}
+  /* Let's get this party started */
+.chat_window::-webkit-scrollbar {
+  width:7px;
+}
+
+/* Track */
+.chat_window::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+.chat_window::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: gray;
+  box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.chat_window::-webkit-scrollbar-thumb:window-inactive {
+  background: gray;
+}
+.App {
+  text-align: center;
+}
+.btn-av{
+  font-size: 26px;
+  padding: 8px 12px 5px 12px;
+  border: 1px solid #12162B;
+  border-radius: 50%;
+  height: 50px;
+  margin: -0.2rem 1rem 1rem 1rem;
+}
+.brand-logo{
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  WIDTH: 4rem;
+  padding: 0rem;
+}
+.sharedScreen{
+  width: 100%;
+}
+.ss{
+  width: 78%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.red{
+  background-color:#BF2A21;
+  color: white;
+}
+.videoElement
+{
+  border: solid 1px white;
+  background-color:white;
+  border-radius: 14px;
+  padding: 4px;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
+}
+.videoElementHome
+{
+  border: solid 1px white;
+  background-color:white;
+  border-radius: 14px;
+  padding: 4px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
+}
+#videoGrid{
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.footer{
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  background-color: #12162b;
+  height: 11.5%;
+  padding: 1rem;
+}
+.audIcon{font-size:1.4rem;float:right;margin-left:0.6rem}
+.vidIcon{font-size:1.4rem;float:right}
+.toastup{
+  background-color: darkgreen!important;
+  color: white !important;
+  place-content: center;
+  font-size: 1.2rem;
+  animation-duration: 200ms !important;
+}
+#copyinput:focus{
+  box-shadow: unset !important;
+}
+.participant_btn:hover{
+  background-color: #030826;
+}
+.participants{
+  position: relative;
+}
+.modal-backdrop{
+  z-index: unset !important;
+}
+.chat_window{
+  width: 100%;
+  height: 70%;
+  border: 1px solid #4b4f56;
+  border-radius:0.5rem;
+  position: relative;
+  overflow-y: scroll;
+}
+.messages{
+  list-style: none;
+  padding: 0.4rem;
+}
+.message{
+  padding: 0.3rem 0.4rem;
+  width:fit-content;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+  max-width:88%;
+  min-width: 40%;
+  overflow-wrap: anywhere;
+}
+.message-other{
+  background-color:#6c757d;
+}
+.message-own{
+  background-color:#6F00FF;
+  margin-left: auto;
+}
+.chat_username{
+  font-size:0.7rem;
+  float:left;
+  margin-top: 3px;
+  margin-left: -4px;
+}
+.chat_time{
+  font-size:0.7rem;
+  float:right;
+  margin-top: 3px;
+  margin-right: -4px;
+}
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.user_connect_msg{
+  font-size:0.76rem;
+  text-align:center;
+  color:grey;
+  margin-bottom: 4px;
+}
+.name-tag{
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.5rem;
+  color: #fff;
+  background-color: rgba(0,15,47,0.6);
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+.mic-tag{
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.5rem;
+  color: #fff;
+  background-color: rgba(0,15,47,0.6);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size:1.5rem;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1200px){
+  .col-xl-10 {
+      flex: 0 0 auto;
+      width: 80.333333% !important;
+  }
+  .col-xl-2 {
+    flex: 0 0 auto;
+    width: 19.666667% !important;
+  }
+}
