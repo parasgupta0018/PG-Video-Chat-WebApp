@@ -36,29 +36,29 @@ Web Application using which users can Video Chat along with real time chat funct
 Client Side (React App)
 
 ```bash
-  npm i
-  npm start
+npm i
+npm start
 ```
 
 Server Side (Node App)
 
 ```bash
-  npm i
-  node app.js
+npm i
+node app.js
 ```
 ### Docker
 
 Inside client Directory
 ```bash
-  docker build -t psg0018/react-app .
+docker build -t psg0018/react-app .
 ```
 Inside server Directory
 ```bash
-  docker build -t psg0018/node-app .
+docker build -t psg0018/node-app .
 ```
 Docker Compose
 ```bash
-  docker-compose -d up
+docker-compose -d up
 ```
 
 
